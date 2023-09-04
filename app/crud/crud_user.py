@@ -3,8 +3,8 @@ from typing import Any, Dict, Optional, Union
 from sqlalchemy.orm import Session
 
 from .base import CRUDBase
-from app.models.user import User
-from app.schemas.user import UserCreate, UserUpdate
+from models.user import User
+from schemas.user import UserCreate, UserUpdate
 
 
 class CRUDUser(CRUDBase[User, UserCreate, UserUpdate]):
